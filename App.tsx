@@ -316,10 +316,7 @@ const App: React.FC = () => {
             {destinations.map((dest, idx) => (
               <Reveal key={dest.id} delay={idx * 150}>
                 <div 
-                  className={`group relative rounded-[2rem] overflow-hidden cursor-pointer h-[500px] shadow-lg`}
-                  // Simple JS Parallax simulation via transform in style is complex in React without libs, 
-                  // using CSS hover and layout shift instead for smooth effect.
-                  style={{ transform: idx === 1 ? 'translateY(0)' : 'lg:translateY(2rem)' }} 
+                  className={`group relative rounded-[2rem] overflow-hidden cursor-pointer h-[500px] shadow-lg ${idx === 1 ? '' : 'lg:translate-y-8'}`}
                 >
                   <div className="absolute inset-0 bg-gray-900/20 group-hover:bg-gray-900/10 transition-colors z-10" />
                   <img 
@@ -429,7 +426,7 @@ const App: React.FC = () => {
                       </div>
                       <div className="flex justify-between text-sm">
                         <span className="text-gray-400">Gas Fee Est.</span>
-                        <span className="text-[#6C5DD3] font-mono">< 0.001 ETH</span>
+                        <span className="text-[#6C5DD3] font-mono">&lt; 0.001 ETH</span>
                       </div>
                     </div>
                   </div>
