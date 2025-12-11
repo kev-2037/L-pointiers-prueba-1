@@ -5,7 +5,6 @@ import {
   MapPin, 
   Sun, 
   Clock, 
-  ShieldCheck, 
   Bitcoin, 
   Wallet, 
   Star, 
@@ -13,8 +12,7 @@ import {
   Mail, 
   MessageCircle,
   ArrowRight,
-  Anchor,
-  Coffee
+  Anchor
 } from 'lucide-react';
 
 // --- Types ---
@@ -40,21 +38,21 @@ const destinations: Destination[] = [
     id: 1,
     title: "Islas del Rosario de Lujo",
     description: "Navega en yate privado por aguas cristalinas con servicio a bordo.",
-    image: "https://images.unsplash.com/photo-1590523741831-ab7f41e93143?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1590523741831-ab7f41e93143?auto=format&fit=crop&q=80&w=800",
     price: "Desde 1.2 ETH / Grupo"
   },
   {
     id: 2,
     title: "Historia & Leyendas",
     description: "Recorrido privado por la ciudad amurallada al atardecer.",
-    image: "https://images.unsplash.com/photo-1583531352515-8884af319dc1?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1583531352515-8884af319dc1?auto=format&fit=crop&q=80&w=800",
     price: "Desde $50 USD"
   },
   {
     id: 3,
     title: "Ruta Gastronómica",
     description: "Prueba los sabores del Caribe en los mejores rooftops de la ciudad.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=800",
     price: "Desde $80 USD"
   }
 ];
@@ -65,14 +63,14 @@ const testimonials: Testimonial[] = [
     name: "Andrea M.",
     text: "La mejor experiencia en Cartagena. Pagar con crypto fue súper fácil y el soporte 24/7 nos salvó la noche.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200"
   },
   {
     id: 2,
     name: "Carlos D.",
     text: "El yate estaba impecable. L'pointiers se encargó de cada detalle. 100% recomendados.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200"
   }
 ];
 
@@ -133,7 +131,7 @@ const App: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1583531352515-8884af319dc1?q=80&w=2000&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1583531352515-8884af319dc1?auto=format&fit=crop&q=80&w=1920" 
             alt="Cartagena Streets" 
             className="w-full h-full object-cover"
           />
@@ -297,7 +295,7 @@ const App: React.FC = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center pb-4 border-b border-gray-700">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-gray-700 bg-[url('https://images.unsplash.com/photo-1590523741831-ab7f41e93143?q=80&w=100&auto=format&fit=crop')] bg-cover"></div>
+                      <div className="w-10 h-10 rounded-lg bg-gray-700 bg-[url('https://images.unsplash.com/photo-1590523741831-ab7f41e93143?auto=format&fit=crop&q=80&w=100')] bg-cover"></div>
                       <div>
                         <div className="font-medium text-white">Yate Privado 40ft</div>
                         <div className="text-xs text-gray-400">Islas del Rosario • 8 Pax</div>
@@ -389,7 +387,7 @@ const App: React.FC = () => {
 
               {/* Info & Map Side */}
               <div className="bg-gray-900 text-white p-8 md:p-12 flex flex-col justify-between relative">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596436807753-43788339b36d?q=80&w=1000&auto=format&fit=crop')] opacity-10 bg-cover bg-center"></div>
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596436807753-43788339b36d?auto=format&fit=crop&q=80&w=1000')] opacity-10 bg-cover bg-center"></div>
                 <div className="relative z-10">
                   <h3 className="text-xl font-bold mb-6">Información de contacto</h3>
                   <div className="space-y-4">

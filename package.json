@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "lucide-react": "^0.560.0",
-    "react": "^19.2.2"
+    "react": "^19.2.2",
+    "react-dom": "^19.2.2"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
